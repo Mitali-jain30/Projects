@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation Guide | SignSpeak</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-hands glow-icon"></i>
+                <a href="index.html" style="color: inherit; text-decoration: none;">
+                    <span class="logo-text">SignSpeak</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="documentation.html" class="nav-link">Documentation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="installation.html" class="nav-link active">Installation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="community.html" class="nav-link">Community</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Installation Content -->
+    <section class="documentation-page">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Installation Guide</h1>
+                <p class="page-subtitle">Get SignSpeak up and running on your system</p>
+            </div>
+
+            <div class="documentation-grid">
+                <!-- Sidebar Navigation -->
+                <aside class="doc-sidebar">
+                    <div class="sidebar-section">
+                        <h3>Quick Start</h3>
+                        <ul>
+                            <li><a href="#web-version">Web Version</a></li>
+                            <li><a href="#desktop-version">Desktop Version</a></li>
+                            <li><a href="#system-requirements">System Requirements</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Desktop Installation</h3>
+                        <ul>
+                            <li><a href="#python-setup">Python Setup</a></li>
+                            <li><a href="#dependencies">Dependencies</a></li>
+                            <li><a href="#running-app">Running the App</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <h3>Configuration</h3>
+                        <ul>
+                            <li><a href="#microphone-setup">Microphone Setup</a></li>
+                            <li><a href="#troubleshooting">Troubleshooting</a></li>
+                            <li><a href="#updates">Updates</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="doc-content">
+                    <section id="web-version" class="doc-section">
+                        <h2>🌐 Web Version (Recommended)</h2>
+                        <p>The easiest way to use SignSpeak is through the web interface. No installation required!</p>
+                        
+                        <div class="feature-highlight">
+                            <h3>✨ Instant Access</h3>
+                            <p>Simply open the website in your browser and start using SignSpeak immediately. Perfect for demonstrations, quick testing, and accessibility.</p>
+                        </div>
+
+                        <h3>Getting Started</h3>
+                        <ol>
+                            <li>Open your web browser (Chrome or Edge recommended)</li>
+                            <li>Navigate to the SignSpeak website</li>
+                            <li>Allow microphone permissions when prompted</li>
+                            <li>Click the microphone button and start speaking!</li>
+                        </ol>
+
+                        <div class="info-box">
+                            <h3>Browser Requirements</h3>
+                            <ul>
+                                <li><strong>✅ Chrome:</strong> Full support with speech recognition</li>
+                                <li><strong>✅ Edge:</strong> Full support with speech recognition</li>
+                                <li><strong>⚠️ Firefox:</strong> Limited support, fallback mode</li>
+                                <li><strong>⚠️ Safari:</strong> Limited support, fallback mode</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="desktop-version" class="doc-section">
+                        <h2>🖥️ Desktop Version</h2>
+                        <p>For offline usage and extended functionality, install the Python desktop application.</p>
+
+                        <div class="requirements-section">
+                            <h3>Why Choose Desktop Version?</h3>
+                            <ul>
+                                <li><strong>Offline Usage:</strong> Works without internet connection</li>
+                                <li><strong>Better Performance:</strong> Direct system integration</li>
+                                <li><strong>Extended Features:</strong> Advanced configuration options</li>
+                                <li><strong>Privacy:</strong> No data sent to external servers</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="system-requirements" class="doc-section">
+                        <h2>⚙️ System Requirements</h2>
+                        
+                        <div class="tech-grid">
+                            <div class="tech-category">
+                                <h3>Minimum Requirements</h3>
+                                <ul>
+                                    <li>Python 3.7 or higher</li>
+                                    <li>2GB RAM</li>
+                                    <li>100MB free disk space</li>
+                                    <li>Working microphone</li>
+                                    <li>Internet connection (for speech recognition)</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tech-category">
+                                <h3>Recommended</h3>
+                                <ul>
+                                    <li>Python 3.9+</li>
+                                    <li>4GB RAM or more</li>
+                                    <li>500MB free disk space</li>
+                                    <li>High-quality USB microphone</li>
+                                    <li>Stable broadband connection</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tech-category">
+                                <h3>Operating Systems</h3>
+                                <ul>
+                                    <li>✅ Windows 10/11</li>
+                                    <li>✅ macOS 10.14+</li>
+                                    <li>✅ Ubuntu 18.04+</li>
+                                    <li>✅ Other Linux distros</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="python-setup" class="doc-section">
+                        <h2>🐍 Python Setup</h2>
+                        
+                        <h3>Step 1: Install Python</h3>
+                        <div class="code-section">
+                            <h4>Windows:</h4>
+                            <pre><code># Download Python from python.org
+# During installation, check "Add Python to PATH"
+python --version  # Verify installation</code></pre>
+                            
+                            <h4>macOS:</h4>
+                            <pre><code># Using Homebrew (recommended)
+brew install python3
+
+# Or download from python.org
+python3 --version  # Verify installation</code></pre>
+                            
+                            <h4>Linux (Ubuntu/Debian):</h4>
+                            <pre><code>sudo apt update
+sudo apt install python3 python3-pip
+python3 --version  # Verify installation</code></pre>
+                        </div>
+
+                        <h3>Step 2: Download SignSpeak</h3>
+                        <div class="code-section">
+                            <pre><code># Clone the repository
+git clone https://github.com/your-repo/signspeak.git
+cd signspeak
+
+# Or download ZIP file and extract</code></pre>
+                        </div>
+                    </section>
+
+                    <section id="dependencies" class="doc-section">
+                        <h2>📦 Installing Dependencies</h2>
+                        
+                        <h3>Automatic Installation</h3>
+                        <div class="code-section">
+                            <pre><code># Navigate to project directory
+cd signspeak
+
+# Install all dependencies
+pip install -r requirements.txt</code></pre>
+                        </div>
+
+                        <h3>Manual Installation</h3>
+                        <div class="code-section">
+                            <pre><code># Core dependencies
+pip install opencv-python
+pip install speechrecognition
+pip install pyaudio
+pip install numpy
+pip install matplotlib
+
+# Optional dependencies
+pip install mediapipe  # For hand detection
+pip install tkinter     # For GUI (usually included)</code></pre>
+                        </div>
+
+                        <div class="troubleshoot-item">
+                            <h3>🔧 Common Installation Issues</h3>
+                            <p><strong>PyAudio Installation Error:</strong></p>
+                            <ul>
+                                <li><strong>Windows:</strong> Download wheel from <code>https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio</code></li>
+                                <li><strong>macOS:</strong> <code>brew install portaudio && pip install pyaudio</code></li>
+                                <li><strong>Linux:</strong> <code>sudo apt install python3-dev portaudio19-dev && pip install pyaudio</code></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="running-app" class="doc-section">
+                        <h2>🚀 Running the Application</h2>
+                        
+                        <h3>Command Line Usage</h3>
+                        <div class="code-section">
+                            <pre><code># Basic usage
+python main.py
+
+# With specific phrase
+python main.py --phrase "hello"
+
+# Enable debug mode
+python main.py --debug
+
+# List all available phrases
+python main.py --list-phrases</code></pre>
+                        </div>
+
+                        <h3>GUI Application</h3>
+                        <div class="code-section">
+                            <pre><code># Launch graphical interface
+python gui_app.py
+
+# Or use the setup script
+python setup.py</code></pre>
+                        </div>
+
+                        <div class="feature-highlight">
+                            <h3>🎯 Quick Test</h3>
+                            <p>Run <code>python test_gif.py</code> to verify that all GIF files are properly loaded and can be displayed.</p>
+                        </div>
+                    </section>
+
+                    <section id="microphone-setup" class="doc-section">
+                        <h2>🎤 Microphone Setup</h2>
+                        
+                        <h3>Testing Your Microphone</h3>
+                        <div class="code-section">
+                            <pre><code># Test microphone input
+python -c "
+import speech_recognition as sr
+r = sr.Recognizer()
+with sr.Microphone() as source:
+    print('Say something!')
+    audio = r.listen(source)
+    try:
+        print('You said: ' + r.recognize_google(audio))
+    except:
+        print('Could not understand audio')
+"</code></pre>
+                        </div>
+
+                        <h3>Microphone Configuration</h3>
+                        <div class="requirements-section">
+                            <h4>Windows</h4>
+                            <ol>
+                                <li>Right-click sound icon in system tray</li>
+                                <li>Select "Open Sound settings"</li>
+                                <li>Choose your microphone under "Input"</li>
+                                <li>Test microphone and adjust levels</li>
+                            </ol>
+                        </div>
+
+                        <div class="requirements-section">
+                            <h4>macOS</h4>
+                            <ol>
+                                <li>Open System Preferences → Sound</li>
+                                <li>Click "Input" tab</li>
+                                <li>Select your microphone</li>
+                                <li>Adjust input volume</li>
+                            </ol>
+                        </div>
+
+                        <div class="requirements-section">
+                            <h4>Linux</h4>
+                            <ol>
+                                <li>Open Sound settings (varies by desktop)</li>
+                                <li>Or use: <code>alsamixer</code> command</li>
+                                <li>Select input device</li>
+                                <li>Test with: <code>arecord -d 5 test.wav && aplay test.wav</code></li>
+                            </ol>
+                        </div>
+                    </section>
+
+                    <section id="troubleshooting" class="doc-section">
+                        <h2>🔧 Troubleshooting</h2>
+                        
+                        <div class="troubleshoot-item">
+                            <h3>❌ Import Errors</h3>
+                            <p><strong>Problem:</strong> <code>ModuleNotFoundError: No module named 'cv2'</code></p>
+                            <p><strong>Solution:</strong></p>
+                            <ul>
+                                <li>Reinstall OpenCV: <code>pip uninstall opencv-python && pip install opencv-python</code></li>
+                                <li>Check Python version compatibility</li>
+                                <li>Use virtual environment: <code>python -m venv signspeak && source signspeak/bin/activate</code></li>
+                            </ul>
+                        </div>
+
+                        <div class="troubleshoot-item">
+                            <h3>🎤 Microphone Not Detected</h3>
+                            <p><strong>Problem:</strong> "No microphone found" error</p>
+                            <p><strong>Solution:</strong></p>
+                            <ul>
+                                <li>Check microphone connections</li>
+                                <li>Verify system permissions</li>
+                                <li>Install PyAudio properly</li>
+                                <li>Test with: <code>python -m speech_recognition</code></li>
+                            </ul>
+                        </div>
+
+                        <div class="troubleshoot-item">
+                            <h3>🖼️ GIF Files Not Found</h3>
+                            <p><strong>Problem:</strong> "File not found" for GIF animations</p>
+                            <p><strong>Solution:</strong></p>
+                            <ul>
+                                <li>Ensure all GIF files are in the project directory</li>
+                                <li>Check file names match exactly (case-sensitive)</li>
+                                <li>Run: <code>python test_gif.py</code> to verify files</li>
+                            </ul>
+                        </div>
+
+                        <div class="troubleshoot-item">
+                            <h3>🌐 Internet Connection Issues</h3>
+                            <p><strong>Problem:</strong> Speech recognition not working</p>
+                            <p><strong>Solution:</strong></p>
+                            <ul>
+                                <li>Check internet connection</li>
+                                <li>Try different speech recognition service</li>
+                                <li>Use offline speech recognition (if available)</li>
+                                <li>Check firewall settings</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="updates" class="doc-section">
+                        <h2>🔄 Updates and Maintenance</h2>
+                        
+                        <h3>Updating SignSpeak</h3>
+                        <div class="code-section">
+                            <pre><code># Pull latest changes
+git pull origin main
+
+# Update dependencies
+pip install -r requirements.txt --upgrade
+
+# Check for conflicts
+python setup.py verify</code></pre>
+                        </div>
+
+                        <h3>Adding New Phrases</h3>
+                        <ol>
+                            <li>Add new GIF file to the project directory</li>
+                            <li>Update the phrase dictionary in <code>main.py</code></li>
+                            <li>Test the new phrase: <code>python main.py --phrase "your new phrase"</code></li>
+                            <li>Update documentation</li>
+                        </ol>
+
+                        <div class="info-box">
+                            <h3>🔔 Stay Updated</h3>
+                            <ul>
+                                <li>Watch the GitHub repository for updates</li>
+                                <li>Join our community for announcements</li>
+                                <li>Check release notes for new features</li>
+                                <li>Report bugs and suggest improvements</li>
+                            </ul>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-hands"></i>
+                        <span>SignSpeak</span>
+                    </div>
+                    <p>Breaking barriers, building bridges through technology and compassion.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SignSpeak. Made with ❤️ for the deaf and hard-of-hearing community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

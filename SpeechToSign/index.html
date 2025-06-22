@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Sign Language Translator | Bridging Communication</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-hands glow-icon"></i>
+                <span class="logo-text">SignSpeak</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#demo" class="nav-link">Demo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="typing-text" data-text="Breaking Language Barriers"></span>
+                </h1>
+                <p class="hero-subtitle fade-in">
+                    Transform your spoken words into beautiful sign language animations with our cutting-edge AI technology
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary glow-btn" id="tryDemoBtn">
+                        <i class="fas fa-microphone"></i>
+                        Try Demo
+                    </button>
+                    <button class="btn btn-secondary" id="learnMoreBtn">
+                        <i class="fas fa-arrow-down"></i>
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-icon microphone-icon">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <div class="floating-icon hand-icon">
+                    <i class="fas fa-hand-paper"></i>
+                </div>
+                <div class="connection-line"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Simple. Powerful. Inclusive.</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card" data-aos="slide-right">
+                    <div class="card-icon">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <h3>Speech Input</h3>
+                    <p>Speak naturally into your microphone. Our advanced speech recognition technology captures and processes your words in real-time.</p>
+                </div>
+                
+                <div class="about-card" data-aos="slide-up">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Processing</h3>
+                    <p>Our intelligent system analyzes your speech and matches it with our comprehensive sign language database using machine learning.</p>
+                </div>
+                
+                <div class="about-card" data-aos="slide-left">
+                    <div class="card-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Sign Language Output</h3>
+                    <p>Watch as your words transform into beautiful, accurate sign language animations that help bridge communication gaps.</p>
+                </div>
+            </div>
+
+            <div class="features-showcase">
+                <div class="feature-list">
+                    <h3>Supported Phrases</h3>
+                    <div class="phrase-tags">
+                        <span class="phrase-tag">Hello</span>
+                        <span class="phrase-tag">Thank You</span>
+                        <span class="phrase-tag">I Like You</span>
+                        <span class="phrase-tag">Happy</span>
+                        <span class="phrase-tag">Nice to Meet You</span>
+                        <span class="phrase-tag">No</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Try the Demo</h2>
+                <p class="section-subtitle">Experience the magic of speech-to-sign translation</p>
+            </div>
+            
+            <div class="demo-container">
+                <div class="demo-interface">
+                    <div class="microphone-container">
+                        <div class="microphone-glow">
+                            <button class="microphone-btn" id="microphoneBtn">
+                                <i class="fas fa-microphone"></i>
+                            </button>
+                        </div>
+                        <p class="mic-status" id="micStatus">Click to start listening</p>
+                    </div>
+                    
+                    <div class="demo-output">
+                        <div class="output-text">
+                            <h4>Recognized Speech:</h4>
+                            <p id="recognizedText">Speak something...</p>
+                        </div>
+                        <div class="output-animation">
+                            <h4>Sign Language Animation:</h4>
+                            <div class="animation-placeholder" id="animationArea">
+                                <i class="fas fa-hand-paper placeholder-icon"></i>
+                                <p>Animation will appear here</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-info">
+                    <div class="info-card">
+                        <h4>Quick Start Guide</h4>
+                        <ol>
+                            <li>Click the microphone button</li>
+                            <li>Say one of the supported phrases clearly</li>
+                            <li>Watch the sign language animation</li>
+                            <li>Repeat with different phrases</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="demo-note">
+                        <p><strong>Note:</strong> This is a demonstration interface. The full application runs as a Python desktop application with real-time speech recognition and GIF animations.</p>
+                        <a href="#" class="download-link">
+                            <i class="fab fa-github"></i>
+                            Download Full Application
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-hands"></i>
+                        <span>SignSpeak</span>
+                    </div>
+                    <p>Breaking barriers, building bridges through technology and compassion.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="installation.html">Installation Guide</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SignSpeak. Made with ❤️ for the deaf and hard-of-hearing community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
